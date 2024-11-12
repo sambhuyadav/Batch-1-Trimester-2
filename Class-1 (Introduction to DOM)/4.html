@@ -45,7 +45,7 @@
   </head>
 
   <body>
-    <div class="card" data-color="blue"></div>
+    <div class="card box1 box2" data-color="blue"></div>
     <div class="card" data-color="red"></div>
     <div class="card" data-color="blue"></div>
     <div class="card" data-color="red"></div>
@@ -60,8 +60,20 @@
       //double clicking on them and attaches the fetched class to that card.
       // Also changes the data-color attribute to "used"
 
-     
+      const allCards = document.querySelectorAll('.card')
+      console.log(allCards)
 
+      for(let i=0 ; i<allCards.length ; i++){
+        allCards[i].addEventListener('dblclick', function(e){
+       const color = e.target.getAttribute('data-color')
+       console.log(color)
+
+         e.target.classList.add(color)
+
+         e.target.setAttribute('data-color' , 'used')
+        })
+      }
+     
 
     </script>
   </body>
