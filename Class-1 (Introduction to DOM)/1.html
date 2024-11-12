@@ -10,13 +10,40 @@
   </head>
   <body>
     <button id="btn-1">Say Hello</button>
+    
+
 
     <script>
 
       // Show Hello on the click of the Button
-      // QuerySelector
+      // QuerySelector , getElementbyId , getElementbyclassname
 
-      
+       const helloBtn = document.querySelector('#btn-1')
+       
+
+       // Events
+       // EventListener
+
+       helloBtn.addEventListener('click' , function(){
+           const helloDiv = document.createElement('div')
+       
+           helloDiv.innerText ='Hello'
+
+           console.log(helloDiv)
+
+           const body = document.querySelector('body')
+
+           body.appendChild(helloDiv)
+
+
+       })
+
+
+
+
+
+    
+
 
      
       
