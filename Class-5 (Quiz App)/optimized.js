@@ -18,5 +18,5 @@ form.addEventListener("submit", function (e) {
   });
 
   result.classList.remove("hide");
-  result.querySelector("p").innerText = `You Scored ${score}/5`;
+  result.querySelector(".score").innerText = `You Scored ${score}/5`;
 });
