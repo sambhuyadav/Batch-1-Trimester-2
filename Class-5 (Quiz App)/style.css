@@ -85,11 +85,11 @@
 }
 
 .correct{
-    background-color: #c8ffdf;
+    background-color: green;
 }
 
 .wrong{
-    background-color: #ffd1d1;
+    background-color: red;
 }
 
 .submit{
