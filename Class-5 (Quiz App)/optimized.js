@@ -9,6 +9,7 @@ form.addEventListener("submit", function (e) {
   let score = 0;
   correctAns.forEach((answer, index) => {
     const userAnswer = form[`q${index + 1}`].value; // Access input value directly
+    
     if (userAnswer === answer) {
       score += 1;
       questions[index].classList.add("correct");
