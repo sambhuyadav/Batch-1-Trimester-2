@@ -9,20 +9,40 @@
 
 
 <script>
-  // this is the date object which returns presnt date and time
-    const now = new Date()
-    console.log(now)
+//   // this is the date object which returns presnt date and time
+//     const now = new Date()
+//     console.log(now)
 
 
-    const specifiedDate = new Date("2024-11-03T10:30:45")
-    console.log("Specific Date -> ", specifiedDate)
+//     const specifiedDate = new Date("2024-11-03T10:30:45")
+//     console.log("Specific Date -> ", specifiedDate)
 
 
-    // create date with individual component
+//     // create date with individual component
 
-    const customDate =  new Date(2024 , 11 , 25 , 14 , 35 , 29)
-    console.log('custom Date', customDate)
-    // (year , month(index) , date , hour , minutes , seconds  )
+//     const customDate =  new Date(2024 , 11 , 25 , 14 , 35 , 29)
+//     console.log('custom Date', customDate)
+//     // (year , month(index) , date , hour , minutes , seconds  )
+
+
+// methods
+
+   const now = new Date()
+
+   console.log(now)
+
+   console.log(now.getFullYear()) // 2024
+   console.log(now.getMonth()) // 0-Jan , 11 - dec
+   console.log(now.getDate()) // 10
+   console.log(now.getHours()) //10
+   console.log(now.getMinutes()) // 34
+   console.log(now.getSeconds()) // 45
+   console.log(now.getMilliseconds()) // 987
+   
+
+
+
+
 
 
 
