@@ -5,11 +5,10 @@ const result = document.querySelector(".result");
 const form = document.querySelector(".quiz-form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-
   let score = 0;
   correctAns.forEach((answer, index) => {
     const userAnswer = form[`q${index + 1}`].value; // Access input value directly
-    
+
     if (userAnswer === answer) {
       score += 1;
       questions[index].classList.add("correct");
